@@ -110,34 +110,33 @@ console.log(`color picked = ${randomcolor()}`)
 console.log("\n ------ EXERCISE  ------ ")
 
 function checkName() {
-    let user;
+    while (true) { // Infinite loop to repeatedly prompt the user until a valid name is entered
+        let user = prompt("Please enter a name:"); 
 
-    while (true) {
-        user = prompt("Please enter a name: ");
-
-        // Check if the user clicked Cancel
+        // Check if the user clicked "Cancel" (which returns null)
         if (user === null) {
-            alert("You forgot to enter a name. Enter a name again:");
-            continue; // Restart the loop
+            console.log("You forgot to enter a name. Enter a name again:");
+            continue; // Restart the loop to prompt the user again
         }
 
-        // Check if the user entered an empty string
-        if (user.trim() === "") {
-            alert("You forgot to enter a name. Enter a name again:");
-            continue; // Restart the loop
+        // Check if the user entered an empty string (just pressed OK without typing anything)
+        if (user.trim() === "") { // .trim() removes spaces, ensuring empty spaces are also considered empty input
+            console.log("You forgot to enter a name. Enter a name again:");
+            continue; 
         }
 
-        // Check if the user entered a number
-        if (!isNaN(user)) {
-            alert(`${user} is invalid! Enter a name again:`);
-            continue; // Restart the loop
+        // Check if the user entered a number instead of a name
+        if (!isNaN(user)) { // isNaN(user) checks if the input is NOT a number. The '!' negates the result.
+            console.log(`${user} is invalid! Enter a name again:`);
+            continue; 
         }
-
-        // If input is valid, exit the loop
-        console.log(`Welcome ${user.toUpperCase()} to the class!`);
-        break;
+        
+        // If all checks pass, print a welcome message and exit the loop
+        console.log(`Welcome ${user} to the class!`);
+        break; // Exit the loop since a valid name was entered
     }
 }
 
+// Call the function to execute the name validation process
 checkName();
 
