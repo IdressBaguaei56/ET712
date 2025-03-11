@@ -15,3 +15,10 @@
     height: 200px;
     background-color: aquamarine;
 }
+/* example 8 */
+.divexample8{
+    width: 300px;
+    height: 300px;
+    margin: 2em auto;
+    border: solid 2px gray;
+}
