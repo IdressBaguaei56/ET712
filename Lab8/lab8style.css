@@ -1,0 +1,6 @@
+/* Example 1 */
+.btnpressme{
+    display: block;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
