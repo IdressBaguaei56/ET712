@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 8, events and applications</title>
+    <link rel="stylesheet" href="lab8style.css">
 </head>
 <body>
     <h1> Idress Baguaei </h1>
     <h2> Lab 8, events and applications</h2>
     <h3>Example 1: Event object</h3>
     <button class="btnpressme">PRESS ME</button>
+
+    <h3> Example 2: event delegation </h3>
+    <p> Fruits</p>
+    <ul id="fruitlist">
+        <li> Apple</li>
+        <li>Orange</li>
+        <li>Kiwi</li>
+    </ul>
+
+    <h3> Example 3: Prevent default of an element </h3>
+    <a href="https://www.qcc.cuny.edu/" class="linkqcc">QCC</a>
+
+    <h3> Example 4: model window application </h3>
+    <section class="card">
+        <img src="rename.jpg">
+        <a href="#readmore" class="linkreadmore"> Read more</a>
+    </section>
+    
+    <section class="modalwindow" id="readmore">
+        <div class="modalcontent">
+            <header class="modalheader">
+                <h3>Mountains</h3>
+                <a class="closex">x</a>
+            </header>
+            <main>
+                <img src="rename.jpg">
+                <p class="info"> A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. Although definitions vary, a mountain may differ from a plateau in having a limited summit area</p>
+            </main>
+        </div>
+    </section>
+
+
+
+    <script src="lab8.js"></script>
 </body>
 </html>
