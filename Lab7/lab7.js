@@ -90,3 +90,42 @@ let ex9paragraph = document.querySelector(".ex9paragraph")
 inputext9.onkeydown = function(event){
     ex9paragraph.innerHTML = `key ${event.key} was pressed`
 }
+
+/**
+ * LAB EXCERCISE
+ */
+// EXERCISE
+// note: use querySelector() or querySelectorAll()
+// collect elements: search for the first p with class ps1
+let ps1 = document.querySelector(".ps1");
+
+// add a mouseout event to change the text content to "STUDENT'S FULL NAME"
+ps1.addEventListener("mouseout", function() {
+    ps1.innerHTML = "Idress Baguaei";
+});
+
+// search for the second p with class ps2
+let ps2 = document.querySelector(".ps2");
+
+// add a click event to the ps2 to change the font-size to 25px and color to olive when clicked
+ps2.addEventListener("click", function() {
+    ps2.style.color = "olive";
+    ps2.style.fontSize = "25px";
+});
+
+// search for the first div with class divs2
+let divs2 = document.querySelector(".divs2");
+
+// add a click event to change the background color to indigo
+divs2.addEventListener("click", function() {
+    divs2.style.backgroundColor = "indigo";
+});
+
+// search for the second div with class divs3
+let divs3 = document.querySelector(".divs3");
+
+// add a keydown event to change the width of divs3 to 300px
+divs3.setAttribute("tabindex", "0");
+divs3.addEventListener("keydown", function(event) {
+    divs3.style.width = "300px";
+});
