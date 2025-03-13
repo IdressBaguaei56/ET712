@@ -7,7 +7,7 @@ console.log("Idress Baguaei")
 
 
  btnpressme.addEventListener("click", function(e){
-    if(e.target.textContent == "PRESS ME"){
+    if(e.target.textContent === "PRESS ME"){
         e.target.textContent = "Button was pressed!"
     }
     else{
