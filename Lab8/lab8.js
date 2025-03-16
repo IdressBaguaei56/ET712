@@ -57,3 +57,17 @@ linkreadmore.addEventListener("click", function(){
 closex.addEventListener("click", function(){
     modalwindow.style.display = "none"
 })
+
+let numcount = 0
+
+let circle = document.getElementById("circle")
+let resetbtn = document.getElementById("resetbtn")
+
+circle.addEventListener("click", function(){
+    numcount ++;
+    circle.textContent = numcount
+})
+resetbtn.addEventListener("click", function(){
+    numcount = 0 
+    circle.textContent = numcount
+})
