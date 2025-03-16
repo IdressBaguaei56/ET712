@@ -58,6 +58,7 @@ closex.addEventListener("click", function(){
     modalwindow.style.display = "none"
 })
 
+// LAB EXCERICE 
 let numcount = 0
 
 let circle = document.getElementById("circle")
