@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+#myform {
+    width: 600px;
+    margin: 4em auto;
+    background-color: blueviolet;
+    padding: 2em;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btnsubmit {
+    width: 200px;
+    height: 60px;
+    margin: 2em auto;
+    background-color: magenta;
+    padding: 0.5em 1em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border: 5px solid plum;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnsubmit:hover {
+    background-color: purple;
+    color: aliceblue;
+    border: 5px solid slateblue;
+}
+
+.greeting {
+    width: 400px;
+    margin: auto;
+    display: none;
+}
+
+.greetuser {
+    color: crimson;
+    font-weight: bolder;
+}
+
+.formcontrol {
+    margin: 2em;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    color: white;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+form {
+    margin-bottom: 30px; 
+}
+
+/* Lab Exercise 2 */
+/* CSS for Card Gallery */
+
+
+.gallery-container {
+    width: 600px; 
+    overflow: hidden;
+    position: relative;
+    margin: 30px auto; 
+}
+
+.gallery {
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+}
+
+.card {
+    width: 190px; 
+    margin-left: 10px;
+    display: inline-blocks;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px; 
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}

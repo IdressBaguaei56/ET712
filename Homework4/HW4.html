@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idress Baguaei Homework 4</title>
+    <link rel="stylesheet" href="HW4.css">
+</head>
+<body>
+    <!-- Lab Excercise Part 1/2-->
+    <form id="myform">
+        <section class="formcontrol">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username...">
+            <p class="error-msg" id="username-error"></p>
+        </section>
+
+        <section class="formcontrol">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter email...">
+            <p class="error-msg" id="email-error"></p>
+        </section>
+
+        <section class="formcontrol">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password...">
+            <p>The password must be at least 5 characters and include #, $, or %</p>
+            <p class="error-msg" id="password-error"></p>
+        </section>
+
+        <button type="submit" class="btnsubmit" disabled>Submit Form</button>
+    </form>
+
+    <div class="gretting" style="display: none;">
+        <p>Success! Welcome, <span class="greetuser"></span>.</p>
+    </div>
+<!-- Lab Exercise 2 (Card Gallery) -->
+<div class="gallery-container">
+    <div class="gallery">
+        <div class="card">
+            <img src="Images/apple.jpg" alt="Apple">
+            <h3>Apple</h3>
+            <p>A global technology company known for its iPhones, MacBooks, and innovative ecosystem.</p>
+            <a href="https://www.apple.com/store?cid=aos-us-kwgo-brand">APPLE</a>
+        </div>
+        <div class="card">
+            <img src="Images/channel.jpg" alt="channel">
+            <h3>Channel</h3>
+            <p>A luxury fashion brand famous for haute couture, perfumes, and accessories.</p>
+            <a href="https://www.chanel.com/us/?gad_source=1&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmvfGj5-_FnwEmi6uQWiUfCumMZn5_3kCK8cn9GEyL-AFHX-kWqbBAMaAgKlEALw_wcB&gclsrc=aw.ds">CHANNEL</a>
+        </div>
+        <div class="card">
+            <img src="Images/converse.jpg" alt="converse">
+            <h3>Converse</h3>
+            <p>A footwear brand best known for its iconic Chuck Taylor All-Star sneakers.</p>
+            <a href="https://www.converse.com/shop/shoes?cp=PSH_PRF_CNV_NA_Google_US---GOOGLE---SEARCH---BRAND---CORE_ADGROUP-ID_KEYWORD-ID&gad_source=1&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmuGbAfkggDXJhyAI1t89PEDytr_GfKTk65m_8hdE9syY3D5JXd1MYgaAoRMEALw_wcB&gclsrc=aw.ds">CONVERSE</a>
+        </div>
+        <div class="card">
+            <img src="Images/mickey.jpg" alt="disney">
+            <h3>Disney</h3>
+            <p>An entertainment giant with films, theme parks, and streaming (Disney+).</p>
+            <a href="https://www.disney.com/">DISNEY</a>
+        </div>
+        <div class="card">
+            <img src="Images/netflix.jpg" alt="netflix">
+            <h3>Netflix</h3>
+            <p>A streaming platform offering movies, TV shows, and original content.</p>
+            <a href="https://www.netflix.com/">NETFLIX</a>
+        </div>
+        <div class="card">
+            <img src="Images/nike.jpg" alt="nike">
+            <h3>Nike</h3>
+            <p>A sportswear brand recognized for its sneakers, apparel, and "Just Do It" slogan.</p>
+            <a href="https://www.nike.com/?cp=41180663293_search_-nike-g-20300414621-150548537237-e-c&dplnk=member&gad_source=1&gclid=Cj0KCQjwqIm_BhDnARIsAKBYcmstoa25enyjT5LC7f_ZbipJvbPbf52qGTuuBOW_wSbuR1bfED1jP_MaAggVEALw_wcB&gclsrc=aw.ds">NIKE</a>
+        </div>
+    </div>
+    <!-- Navigation buttons -->
+    <button class="nav-btn left-btn">&#60;</button>
+    <button class="nav-btn right-btn">&#62;</button>
+</div>
+
+    <script src="HW4.js"></script>
+</body>
+</html>
