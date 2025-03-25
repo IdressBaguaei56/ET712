@@ -1,0 +1,31 @@
+*{box-sizing: border-box;}/* perserve the 100% width of the screen  */
+img{width: 100%;}
+.header{
+    background-color: yellow;
+    display: flex;
+}
+body{
+    background-color: blue;
+}
+.logo{
+    width: 9%;
+    padding: 1em;
+    margin-left: 5%;
+}
+.title{
+    width: 70%;
+    text-align: center;
+    padding: 1em;
+    font-size: 2.5em;
+    color: darkblue;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium';
+    background-color: yellow;
+}
+.quicklinks{
+    width: 8%;
+    height: 5%;
+    padding: 1em;
+    margin-left: auto;
+    display: flex;
+}
