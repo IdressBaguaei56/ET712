@@ -29,3 +29,58 @@ body{
     margin-left: auto;
     display: flex;
 }
+/* NAVLINKS*/
+.navlinks{
+    width: 100%;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+.navlinks a{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+.navlinks a:hover{
+    background-color: yellow;
+    color: darkblue;
+    font-weight: bolder;
+}   
+/* Main - Intro Image */
+.introimage{
+    border-radius: 10px 20px;
+    position: relative;
+}
+.intro{
+    position: absolute;
+    bottom: 85%;
+    right: 1%;
+    left: 1%;
+    background-color: rgba(200,200,200,0.6);
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    border-radius: 12px;
+    color: darkblue;
+    font-size: xx-large;
+}
+.icon{
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.icon img{
+    width: 15%;
+    margin-left: 2%;
+}
+
+
+
