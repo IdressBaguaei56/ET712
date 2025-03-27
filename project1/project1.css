@@ -81,6 +81,53 @@ body{
     width: 15%;
     margin-left: 2%;
 }
-
-
-
+.cintro{
+    position: absolute;
+    bottom: -60%;
+    right: 1%;
+    left: 1%;
+    background-color: rgba(200,200,200,0.6);
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    border-radius: 12px;
+    color: darkblue;
+    font-size: xx-large;
+}
+.circle {
+    position: absolute;
+    bottom: -140%;
+    right: 35%;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    font-size: xx-large;
+    text-align: center;
+    user-select: none;
+}
+.mintro{
+    position: absolute;
+    bottom: -177%;
+    right: 1%;
+    left: 1%;
+    background-color: rgba(200,200,200,0.6);
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    border-radius: 12px;
+    color: darkblue;
+    font-size: xx-large;
+}
