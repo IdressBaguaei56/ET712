@@ -75,55 +75,65 @@ form {
 
 /* Lab Exercise 2 */
 /* CSS for Card Gallery */
-
-
-.gallery-container {
-    width: 600px; 
-    overflow: hidden;
-    position: relative;
-    margin: 30px auto; 
+img{width: 100%; display: block; height: 100%;}
+.maincontainer, .gallercontainer{
+    width: 1200px;
+    height: 800px;
+    margin: auto;
 }
-
-.gallery {
+.maincontainer{
     position: relative;
+    z-index: 0;
+}
+.gallercontainer{
+    position: relative;
+    z-index: 1;
     overflow-x: scroll;
-    overflow-y: hidden;
     white-space: nowrap;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
+    overflow-y: hidden;
 }
-
-.card {
-    width: 190px; 
-    margin-left: 10px;
-    display: inline-blocks;
-    background-color: lightgray;
-    text-align: center;
-    border-radius: 5px;
-    box-sizing: border-box; 
+.galleryimg{
+    display: inline-block;
+    width: 400px;
 }
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.nav-btn {
+.btnright, .btnleft{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: black;
-    color: white;
+    z-index: 2;
+    top: 40%;
+    font-size: 1.5em;
+    padding: 0.5em;
     border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px; 
+    background-color: rgba(200, 200, 200, 0.6);
 }
-
-.left-btn {
-    left: 0;
+.btnright{
+    right: 0%;
 }
-
-.right-btn {
-    right: 0;
+.btnleft{
+    left: 0%;
+}
+.btnright:hover, .btnleft:hover{
+background-color: rgba(200, 200, 200, 0.9);
+color: crimson;
+}
+/* Example 3 */
+html{scroll-behavior: smooth;}
+.topcontainer{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(200, 200, 200, 0.6);
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 50%;
+    text-align: center;
+}
+.toplink{
+    color: black;
+    padding-top: 1em;
+    display: block;
+    text-decoration: none;
+}
+.toplink:hover{
+    color: crimson;
+    font-weight: bolder;
 }

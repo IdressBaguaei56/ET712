@@ -7,7 +7,7 @@
 /* EXAMPLE 2 */
 img{width: 100%; display: block; height: 100%;}
 .maincontainer, .gallercontainer{
-    width: 1200px;
+    width: 600px;
     height: 800px;
     margin: auto;
 }

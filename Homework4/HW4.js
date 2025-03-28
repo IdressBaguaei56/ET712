@@ -79,33 +79,39 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Lab Excercie 2
-// Get the elements
-const gallery = document.querySelector('.gallery');
-const leftBtn = document.querySelector('.left-btn');
-const rightBtn = document.querySelector('.right-btn');
+let btnright = document.querySelector(".btnright")
+let btnleft = document.querySelector(".btnleft")
 
-// Set initial position of the gallery
-let position = 0;
-const cardWidth = 100; // Width of a card + margin (adjust as necessary)
-const cardsPerSlide = 2; // Show 1 cards per slide
-const totalCards = document.querySelectorAll('.card').length; // Total number of cards
-
-// Function to move the gallery
-function moveGallery() {
-    gallery.style.transform = `translateX(-${position * cardWidth}px)`;
+// function to scroll the gallery container 
+function scrollgallery(pexels){
+    let gallercontainer = document.querySelector(".gallercontainer")
+    gallercontainer.scrollBy({
+        left:pexels,
+        behavior: "smooth"    
+    })
 }
 
-// Event listeners for the buttons
-leftBtn.addEventListener('click', () => {
-    if (position > 0) {
-        position -= cardsPerSlide;
-    }
-    moveGallery();
-});
+// add a click event to each buttons 
+btnright.addEventListener("click", function(){
+    scrollgallery(400)
+})
 
-rightBtn.addEventListener('click', () => {
-    if (position < totalCards - cardsPerSlide) {
-        position += cardsPerSlide;
+btnleft.addEventListener("click", function(){
+    scrollgallery(-400)
+})
+
+/**
+ * example 3 
+ */
+let topcontainer = document.querySelector(".topcontainer")
+
+window.addEventListener("scroll",function(){
+    let pxTop = window.scrollY
+    console.log(pxTop)
+    if(pxTop>100){
+        topcontainer.computedStyleMap.display = "block"
+    }    
+    else{
+        topcontainer.computedStyleMap.display = "none"
     }
-    moveGallery();
-});
+})
