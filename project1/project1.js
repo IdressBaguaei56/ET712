@@ -1,11 +1,3 @@
-// This is the color changing wheel code
-let divexample8 = document.querySelector(".divexample8");
-divexample8.onmouseout = function() {
-    let randred = Math.floor(Math.random() * 255);
-    let randgreen = Math.floor(Math.random() * 255);
-    let randblue = Math.floor(Math.random() * 255);
-    divexample8.style.backgroundColor = `rgb(${randred},${randgreen},${randblue})`;
-};
 // color changing part
 function changeColor() {
     const colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
@@ -34,3 +26,10 @@ btnsquare.addEventListener("click", function () {
 btnrectangle.addEventListener("click", function () {
     shape.className = "shape rectangle";
 });
+function checkAnswer(answer) {
+    if (answer === 'fish') {
+        alert('Correct! Fish lives in the sea.');
+    } else {
+        alert('Wrong! Try again.');
+    }
+}

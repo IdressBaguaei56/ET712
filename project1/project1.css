@@ -144,7 +144,6 @@ body{
     right: 38%;
    
 }
-
 .circle1 {
     width: 200px;
     height: 200px;
@@ -185,6 +184,7 @@ button:hover {
     right: 1%;
     left: 1%;
 }
+/* The english part of the lab */
 .eintro{
     position: absolute;
     bottom: -294%;
@@ -281,3 +281,50 @@ button:hover {
     font-size: xx-large;
 
 }
+/* The science part of the lab */
+.container {
+    position: absolute;
+    bottom: -460%;
+    right: 1%;
+    left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+
+.animal {
+    display: flex; /* This makes the image and button side by side */
+    flex-direction: column; /* Ensures the image is above the button */
+    align-items: center; /* Centers them horizontally */
+}
+
+.animal-img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #000;
+    object-fit: cover;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}
+
