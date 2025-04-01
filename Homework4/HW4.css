@@ -95,6 +95,7 @@ img{width: 100%; display: block; height: 100%;}
 .galleryimg{
     display: inline-block;
     width: 400px;
+    height: 600px;
 }
 .btnright, .btnleft{
     position: absolute;
