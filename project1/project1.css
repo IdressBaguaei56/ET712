@@ -422,15 +422,4 @@ button:hover {
     border: 2px solid black;
     object-fit: cover;
 }
-/* FOOTER */
-.footer {
-    width: 100%;
-    margin-top: 2em;
-    text-align: center;
-    background-color: darkblue;
-    color: azure;
-    padding: 3em;
-    position: absolute;
-    left: 0;
-    bottom: 500%;
-}
+
