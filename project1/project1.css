@@ -211,13 +211,12 @@ html{scroll-behavior: smooth;}
 }
 
 .star {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid gold;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
+
 
 .rectangle {
     width: 200px;
