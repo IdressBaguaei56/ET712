@@ -1,6 +1,6 @@
 // color changing part
 function changeColor() {
-    const colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
+    const colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Pink", "Teal", "Brown"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     const newColor = colors[randomIndex];
 
