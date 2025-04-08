@@ -38,7 +38,8 @@
         <a class="colorimg" href="#linkcolor"><img src="images /color.svg" alt="color" title="pallet" ></a>
         <a class="colorimg" href="#linkmath"><img src="images /math.svg" alt="calc" title="math" ></a>
         <a class="colorimg" href="#linkela"><img src="images /read.svg" alt="letters" title="book"></a>
-        <a class="colorimg" href="#linksci"><img src="images /science.svg" alt="lab" title="science"></a>        
+        <a class="colorimg" href="#linksci"><img src="images /science.svg" alt="lab" title="science"></a>   
+        <a class="colorimg" href="#linksign"><img src="images /signin.svg" alt="sign" title="signin"></a>    
     </section>
 
     <!-- This is the color guessing html-->
@@ -158,7 +159,6 @@
         <div class="sintro">
             <h1>WHAT ANIMAL LIVES IN THE SEA!!!</h1>
         </div>
-    </section>
     <div class="container">
         <div class="animal">
             <img src="images /fish.svg" alt="Fish">
@@ -207,6 +207,45 @@
             <button class="btnclick" onclick="checkAnswer('koala')">Koala</button>
         </div>
     </div>
+</section>
+
+        <!-- The sign in part -->
+    <section class="Signin">
+        <img src="images /Signinbkg.jpg" alt="sbkg" id="linksign">
+        <div class="signintro">
+            <h1>PLEASE SIGN IN !!!</h1>
+        </div>
+    </section>
+       <form id="myform">
+        <section class="formcontrol">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username...">
+            <p class="error-msg" id="username-error"></p>
+        </section>
+
+        <section class="formcontrol">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter email...">
+            <p class="error-msg" id="email-error"></p>
+        </section>
+
+        <section class="formcontrol">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password...">
+            <p>The password must be at least 5 characters and include #, $, or %</p>
+            <p class="error-msg" id="password-error"></p>
+        </section>
+
+        <button type="submit" class="btnsubmit" disabled>Submit Form</button>
+    </form>
+
+    <div class="gretting" style="display: none;">
+        <p>Success! Welcome, <span class="greetuser"></span>.</p>
+    </div>
+
+    <footer class="footer">
+        Creator / Web Designer @ Idress Baguaei 
+    </footer>
 
     <script src="project1.js"></script>
 </body>

@@ -422,3 +422,105 @@ button:hover {
     object-fit: cover;
 }
 
+.signintro{
+    position: absolute;
+    bottom: -527%;
+    right: 1%;
+    left: 1%;
+    background-color: rgba(200,200,200,0.6);
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    border-radius: 12px;
+    color: darkblue;
+    font-size: xx-large;
+}
+#myform {
+    width: 600px;
+    margin: 4em auto;
+    background-color: blueviolet;
+    padding: 2em;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -600%;
+    left: 1%;
+    right: 1%;
+}
+
+.btnsubmit {
+    width: 200px;
+    height: 60px;
+    margin: 2em auto;
+    background-color: magenta;
+    padding: 0.5em 1em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border: 5px solid plum;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnsubmit:hover {
+    background-color: purple;
+    color: aliceblue;
+    border: 5px solid slateblue;
+}
+
+.gretting {
+    position: absolute;
+    bottom: -609%;
+    right: 1%;
+    left: 1%;
+    font-size: xx-large;
+    font-weight: bolder;    
+}
+
+.greetuser {
+    color: crimson;
+    font-weight: bolder;
+}
+
+.formcontrol {
+    margin: 2em;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    color: white;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+form {
+    margin-bottom: 30px; 
+}
+
+
+/* FOOTER */
+.footer{
+    margin-top: 2em;
+    text-align: center;
+    background-color: darkblue;
+    color: azure;
+    padding: 3em;
+}
