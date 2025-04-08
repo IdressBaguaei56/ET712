@@ -106,7 +106,7 @@ html{scroll-behavior: smooth;}
 /* This is the color wheel part for the second page */
 .cintro{
     position: absolute;
-    bottom: -60%;
+    bottom: -75%;
     right: 1%;
     left: 1%;
     background-color: rgba(200,200,200,0.6);
@@ -121,7 +121,7 @@ html{scroll-behavior: smooth;}
 }
 .circle {
     position: absolute;
-    bottom: -140%;
+    bottom: -150%;
     right: 35%;
     width: 500px;
     height: 500px;
@@ -142,7 +142,7 @@ html{scroll-behavior: smooth;}
 /* This is the third page of the childerns website using math*/
 .mintro{
     position: absolute;
-    bottom: -177%;
+    bottom: -202%;
     right: 1%;
     left: 1%;
     background-color: rgba(200,200,200,0.6);
@@ -162,7 +162,7 @@ html{scroll-behavior: smooth;}
     background-color: red;
     margin-bottom: 3em;
     position: absolute;
-    bottom: -245%;
+    bottom: -275%;
     right: 38%;
 }
 
@@ -279,7 +279,7 @@ button:hover {
 
 .btnposition {
     position: absolute;
-    bottom: -35%;
+    bottom: -45%;
     display: flex;
     justify-content: center;
     right: 1%;
@@ -296,7 +296,7 @@ button:hover {
 /* The english part of the lab */
 .eintro{
     position: absolute;
-    bottom: -294%;
+    bottom: -334%;
     right: 1%;
     left: 1%;
     background-color: rgba(200,200,200,0.6);
@@ -312,7 +312,7 @@ button:hover {
 }
 .maincontainer {
     position: absolute;
-    bottom: -380%;
+    bottom: -420%;
     right: 1%;
     left: 1%;
     display: flex;
@@ -376,7 +376,7 @@ button:hover {
 
 .sintro{
     position: absolute;
-    bottom: -410%;
+    bottom: -460%;
     right: 1%;
     left: 1%;
     background-color: rgba(200,200,200,0.6);
@@ -393,7 +393,7 @@ button:hover {
 /* The science part of the lab */
 .container {
     position: absolute;
-    bottom: -485%;
+    bottom: -535%;
     right: 1%;
     left: 1%;
     display: flex;
@@ -424,7 +424,7 @@ button:hover {
 
 .signintro{
     position: absolute;
-    bottom: -527%;
+    bottom: -587%;
     right: 1%;
     left: 1%;
     background-color: rgba(200,200,200,0.6);
@@ -446,7 +446,7 @@ button:hover {
     font-size: 16px;
     font-weight: bold;
     position: absolute;
-    bottom: -600%;
+    bottom: -660%;
     left: 1%;
     right: 1%;
 }
@@ -477,8 +477,7 @@ button:hover {
 .gretting {
     position: absolute;
     bottom: -609%;
-    right: 1%;
-    left: 1%;
+    justify-content: center;
     font-size: xx-large;
     font-weight: bolder;    
 }
