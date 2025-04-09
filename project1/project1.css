@@ -1,18 +1,30 @@
-*{box-sizing: border-box;}/* perserve the 100% width of the screen  */
-img{width: 100%;}
-.header{
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER STYLES */
+.header {
     background-color: yellow;
     display: flex;
 }
-body{
-    background-color: blue;
-}
-.logo{
+
+.logo {
     width: 9%;
     padding: 1em;
     margin-left: 5%;
 }
-.title{
+
+.title {
     width: 70%;
     text-align: center;
     padding: 1em;
@@ -22,21 +34,24 @@ body{
     font-family: 'Franklin Gothic Medium';
     background-color: yellow;
 }
-.quicklinks{
+
+.quicklinks {
     width: 8%;
     height: 5%;
     padding: 1em;
     margin-left: auto;
     display: flex;
 }
-/* NAVLINKS*/
-.navlinks{
+
+/* NAVIGATION LINKS */
+.navlinks {
     width: 100%;
     background-color: darkblue;
     display: flex;
     justify-content: center;
 }
-.navlinks a{
+
+.navlinks a {
     display: inline-block;
     width: 20%;
     text-align: center;
@@ -45,45 +60,59 @@ body{
     color: white;
     text-decoration: none;
 }
-.navlinks a:hover{
+
+.navlinks a:hover {
     background-color: yellow;
     color: darkblue;
     font-weight: bolder;
-}   
-/* Main - Intro Image */
-.introimage{
+}
+
+/* MAIN SECTION INTRO */
+.intro-section {
+    position: relative;
+    width: 100%;
+}
+
+.introimage {
+    width: 100%;
     border-radius: 10px 20px;
     position: relative;
 }
-.intro{
+
+.intro {
     position: absolute;
-    bottom: 85%;
-    right: 1%;
-    left: 1%;
-    background-color: rgba(200,200,200,0.6);
+    top: 10%;  /* Changed from 15% to 10% to position at the top */
+    left: 50%;
+    transform: translateX(-50%);  /* Changed to only transform X */
+    background-color: rgba(200, 200, 200, 0.6);
     text-align: center;
-    padding-top: 5px;
-    padding-right: 1px;
-    padding-bottom: 10px;
-    padding-left: 1px;
+    padding: 10px;
     border-radius: 12px;
     color: darkblue;
     font-size: xx-large;
+    width: 98%;
 }
-.icon{
+
+.icon {
     position: absolute;
-    bottom: 10%;
+    bottom: 35%;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
 }
-.colorimg{
+
+.colorimg {
     width: 15%;
     margin-left: 2%;
 }
-/* The top function */
-html{scroll-behavior: smooth;}
-.topcontainer{
+
+/* TOP BUTTON */
+html {
+    scroll-behavior: smooth;
+}
+
+.topcontainer {
     width: 60px;
     height: 60px;
     background-color: white;
@@ -92,37 +121,59 @@ html{scroll-behavior: smooth;}
     right: 2em;
     border-radius: 50%;
     text-align: center;
+    z-index: 1000;
 }
-.toplink{
+
+.toplink {
     color: red;
     padding-top: 1em;
     display: block;
     text-decoration: none;
 }
-.toplink:hover{
+
+.toplink:hover {
     color: black;
     font-weight: bolder;
 }
-/* This is the color wheel part for the second page */
-.cintro{
+
+/* SECTION CONTAINER - Generic for all sections */
+.section-container {
+    position: relative;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.section-background {
+    position: relative;
+    width: 100%;
+}
+
+.section-intro {
     position: absolute;
-    bottom: -75%;
-    right: 1%;
-    left: 1%;
-    background-color: rgba(200,200,200,0.6);
+    top: 5%;  /* Changed from 50% to 10% to position at the top */
+    left: 50%;
+    transform: translateX(-50%);  /* Changed from translate(-50%, -50%) to only transform X */
+    background-color: rgba(200, 200, 200, 0.6);
     text-align: center;
-    padding-top: 5px;
-    padding-right: 1px;
-    padding-bottom: 10px;
-    padding-left: 1px;
+    padding: 15px;
     border-radius: 12px;
     color: darkblue;
     font-size: xx-large;
+    width: 80%;
+    z-index: 1;
 }
+
+/* COLOR SECTION */
+.color-section {
+    position: relative;
+    width: 100%;
+}
+
 .circle {
     position: absolute;
-    bottom: -150%;
-    right: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
     background-color: red;
@@ -138,34 +189,56 @@ html{scroll-behavior: smooth;}
     font-size: xx-large;
     text-align: center;
     user-select: none;
+    z-index: 2;
 }
-/* This is the third page of the childerns website using math*/
-.mintro{
-    position: absolute;
-    bottom: -202%;
-    right: 1%;
-    left: 1%;
-    background-color: rgba(200,200,200,0.6);
-    text-align: center;
-    padding-top: 5px;
-    padding-right: 1px;
-    padding-bottom: 10px;
-    padding-left: 1px;
-    border-radius: 12px;
-    color: darkblue;
-    font-size: xx-large;
 
+/* MATH SECTION */
+.math-section {
+    position: relative;
+    width: 100%;
 }
+
 .shape {
-    width: 400px;
-    height: 500px;
-    background-color: red;
-    margin-bottom: 3em;
     position: absolute;
-    bottom: -275%;
-    right: 38%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Reduced from 400px to 300px to make it smaller */
+    height: 300px; /* Reduced from 400px to 300px to make it smaller */
+    background-color: red;
+    z-index: 2;
 }
 
+.btnposition {
+    position: absolute;
+    bottom: 12%; /* Changed from -100px to 20% to move buttons up onto the background */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 800px;
+    z-index: 3; /* Added z-index to ensure buttons appear above everything else */
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    padding: 1em 2em;
+    background-color: beige;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: crimson;
+    color: antiquewhite;
+}
+
+/* Shape types */
 .triangle {
     width: 0;
     height: 0;
@@ -217,7 +290,6 @@ html{scroll-behavior: smooth;}
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-
 .rectangle {
     width: 200px;
     height: 100px;
@@ -262,30 +334,6 @@ html{scroll-behavior: smooth;}
     left: 50px;
 }
 
-button {
-    width: 150px;
-    height: 50px;
-    padding: 1em 2em;
-    background-color: beige;
-    border: 1px solid lightgray;
-    cursor: pointer;
-    text-align: center;
-}
-
-button:hover {
-    background-color: crimson;
-    color: antiquewhite;
-}
-
-.btnposition {
-    position: absolute;
-    bottom: -45%;
-    display: flex;
-    justify-content: center;
-    right: 1%;
-    left: 1%;
-}
-
 .shape-created {
     position: absolute;
     top: 50%;
@@ -293,50 +341,40 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
-/* The english part of the lab */
-.eintro{
-    position: absolute;
-    bottom: -334%;
-    right: 1%;
-    left: 1%;
-    background-color: rgba(200,200,200,0.6);
-    text-align: center;
-    padding-top: 5px;
-    padding-right: 1px;
-    padding-bottom: 10px;
-    padding-left: 1px;
-    border-radius: 12px;
-    color: darkblue;
-    font-size: xx-large;
-
+/* ELA SECTION - VOCABULARY CARDS */
+.ela-section {
+    position: relative;
+    width: 100%;
 }
+
 .maincontainer {
     position: absolute;
-    bottom: -420%;
-    right: 1%;
-    left: 1%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     padding: 20px;
+    width: 90%;
+    z-index: 2;
+    margin-top: 150px;
 }
 
-/* Card styling */
 .thecard {
-    width: 250px;
-    height: 300px;
+    width: 190px;
+    height: 200px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
     perspective: 1000px;
 }
 
-/* Flip effect */
 .thecard:hover {
     transform: rotateY(180deg);
 }
-/* Front & Back */
+
 .thefront, .theback {
     width: 100%;
     height: 100%;
@@ -352,7 +390,6 @@ button:hover {
     text-transform: capitalize;
 }
 
-/* Front design */
 .thefront {
     background-color: white;
     border: 2px solid #ccc;
@@ -367,88 +404,67 @@ button:hover {
     object-fit: contain;
 }
 
-/* Back design */
 .theback {
     background-color: #e74c3c;
     color: white;
     transform: rotateY(180deg);
 }
 
-.sintro{
-    position: absolute;
-    bottom: -460%;
-    right: 1%;
-    left: 1%;
-    background-color: rgba(200,200,200,0.6);
-    text-align: center;
-    padding-top: 5px;
-    padding-right: 1px;
-    padding-bottom: 10px;
-    padding-left: 1px;
-    border-radius: 12px;
-    color: darkblue;
-    font-size: xx-large;
-
+/* SCIENCE SECTION */
+.science-section {
+    position: relative;
+    width: 100%;
 }
-/* The science part of the lab */
+
 .container {
     position: absolute;
-    bottom: -535%;
-    right: 1%;
-    left: 1%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     padding: 20px;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    width: 90%;
+    z-index: 2;
+    margin-top: 150px;
 }
-
 
 .animal {
-    display: flex; /* This makes the image and button side by side */
-    flex-direction: column; /* Ensures the image is above the button */
-    align-items: center; /* Centers them horizontally */
-    width: 13%;
-    height: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
 }
 
-.animal-img {
-    width: 15%;
-    height: 15%;
+.animal img {
+    width: 180px;
+    height: 200px;
     border: 2px solid black;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
-.signintro{
-    position: absolute;
-    bottom: -587%;
-    right: 1%;
-    left: 1%;
-    background-color: rgba(200,200,200,0.6);
-    text-align: center;
-    padding-top: 5px;
-    padding-right: 1px;
-    padding-bottom: 10px;
-    padding-left: 1px;
-    border-radius: 12px;
-    color: darkblue;
-    font-size: xx-large;
+/* SIGN IN SECTION */
+.signin-section {
+    position: relative;
+    width: 100%;
 }
+
 #myform {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 600px;
-    margin: 4em auto;
     background-color: blueviolet;
     padding: 2em;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    position: absolute;
-    bottom: -660%;
-    left: 1%;
-    right: 1%;
+    z-index: 2;
+    margin-top: 150px;
 }
 
 .btnsubmit {
@@ -474,12 +490,15 @@ button:hover {
     border: 5px solid slateblue;
 }
 
-.gretting {
+.greeting {
     position: absolute;
-    bottom: -609%;
-    justify-content: center;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     font-size: xx-large;
-    font-weight: bolder;    
+    font-weight: bolder;
+    z-index: 2;
 }
 
 .greetuser {
@@ -509,14 +528,12 @@ input {
     margin-top: 5px;
 }
 
-
 form {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
-
 /* FOOTER */
-.footer{
+.footer {
     margin-top: 2em;
     text-align: center;
     background-color: darkblue;
