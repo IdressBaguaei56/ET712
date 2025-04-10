@@ -458,7 +458,7 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    background-color: blueviolet;
+    background-color: yellow;
     padding: 2em;
     text-align: center;
     font-size: 16px;
@@ -471,12 +471,12 @@ button:hover {
     width: 200px;
     height: 60px;
     margin: 2em auto;
-    background-color: magenta;
+    background-color: blue;
     padding: 0.5em 1em;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: bold;
-    border: 5px solid plum;
+    border: 5px solid darkblue;
     font-size: 16px;
     cursor: pointer;
     display: flex;
@@ -485,9 +485,9 @@ button:hover {
 }
 
 .btnsubmit:hover {
-    background-color: purple;
+    background-color: darkblue;
     color: aliceblue;
-    border: 5px solid slateblue;
+    border: 5px solid darkblue;
 }
 
 .greeting {
@@ -502,7 +502,7 @@ button:hover {
 }
 
 .greetuser {
-    color: crimson;
+    color: darkblue;
     font-weight: bolder;
 }
 
@@ -513,7 +513,7 @@ button:hover {
 label {
     display: inline-block;
     width: 30%;
-    color: white;
+    color: blue;
 }
 
 input {
