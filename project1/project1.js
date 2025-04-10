@@ -1,17 +1,17 @@
 // The top function 
-let topcontainer = document.querySelector(".topcontainer")
+let topcontainer = document.querySelector(".topcontainer");
 
-window.addEventListener("scroll",function(){
-    let pxTop = window.scrollY
-    console.log(pxTop)
-    if(pxTop>100){
-        topcontainer.computedStyleMap.display = "block"
-    }    
-    else{
-        topcontainer.computedStyleMap.display = "none"
+window.addEventListener("scroll", function () {
+    let pxTop = window.scrollY;
+    console.log(pxTop);
+    if (pxTop > 100) {
+        topcontainer.style.display = "block";
+    } else {
+        topcontainer.style.display = "none";
     }
-})
-// color changing part
+});
+
+// Color changing part
 function changeColor() {
     const colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Pink", "Teal", "Brown"];
     const randomIndex = Math.floor(Math.random() * colors.length);
@@ -21,7 +21,8 @@ function changeColor() {
     circle.style.backgroundColor = newColor.toLowerCase();
     circle.textContent = newColor;
 }
-// select elements 
+
+// Select elements 
 let shape = document.querySelector(".shape");
 let btntriangle = document.querySelector(".btntriangle");
 let btnoval = document.querySelector(".btnoval");
@@ -35,59 +36,16 @@ let btncrescent = document.querySelector(".btncrescent");
 let btnmoon = document.querySelector(".btnmoon");
 
 // Add event listeners for each button to create the respective shape
-btntriangle.addEventListener("click", () => {
-    createShape('triangle');
-});
-
-btnoval.addEventListener("click", () => {
-    createShape('oval');
-});
-
-btnhexagon.addEventListener("click", () => {
-    createShape('hexagon');
-});
-
-btndiamond.addEventListener("click", () => {
-    createShape('diamond');
-});
-
-btnoctagon.addEventListener("click", () => {
-    createShape('octagon');
-});
-
-btnsquare.addEventListener("click", () => {
-    createShape('square');
-});
-
-btnstar.addEventListener("click", () => {
-    createShape('star');
-});
-
-btnrectangle.addEventListener("click", () => {
-    createShape('rectangle');
-});
-
-btncrescent.addEventListener("click", () => {
-    createShape('crescent');
-});
-
-btnmoon.addEventListener("click", () => {
-    createShape('moon');
-});
-
-function createShape(shapeClass) {
-    // Remove any existing shapes
-    let existingShape = document.querySelector('.shape-created');
-    if (existingShape) {
-        existingShape.remove();
-    }
-
-    // Create a new div element for the shape
-    let newShape = document.createElement('div');
-    newShape.classList.add(shapeClass, 'shape-created');
-    shape.appendChild(newShape);
-}
-
+btntriangle.addEventListener("click", () => createShape('triangle'));
+btnoval.addEventListener("click", () => createShape('oval'));
+btnhexagon.addEventListener("click", () => createShape('hexagon'));
+btndiamond.addEventListener("click", () => createShape('diamond'));
+btnoctagon.addEventListener("click", () => createShape('octagon'));
+btnsquare.addEventListener("click", () => createShape('square'));
+btnstar.addEventListener("click", () => createShape('star'));
+btnrectangle.addEventListener("click", () => createShape('rectangle'));
+btncrescent.addEventListener("click", () => createShape('crescent'));
+btnmoon.addEventListener("click", () => createShape('moon'));
 
 function createShape(shapeClass) {
     // Remove any existing shapes
@@ -107,8 +65,8 @@ function createShape(shapeClass) {
     newShape.style.left = '50%';
     newShape.style.transform = 'translate(-50%, -50%)';
 }
+
 function checkAnswer(answer) {
-    // Correct answers are 'fish', 'dolphin', 'shark', and 'whale'
     const correctAnswers = ['fish', 'dolphin', 'shark', 'whale'];
 
     if (correctAnswers.includes(answer)) {
@@ -120,9 +78,8 @@ function checkAnswer(answer) {
 
 // Wait until the DOM content is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-    // Collect elements
     const myform = document.querySelector("#myform");
-    const greeting = document.querySelector(".gretting");
+    const greeting = document.querySelector(".greeting"); // ✅ fixed typo
     const greetuser = document.querySelector(".greetuser");
     const btnsubmit = document.querySelector(".btnsubmit");
 
@@ -130,49 +87,38 @@ document.addEventListener("DOMContentLoaded", function () {
     let email = document.querySelector("#email");
     let password = document.querySelector("#password");
 
-    // Disable submit button on page load
-    btnsubmit.disabled = true;  // Initially disable the submit button
+    btnsubmit.disabled = true;
 
-    // Function to check if the form is valid
     function checkFormValidity() {
         let usernameValue = username.value.trim();
         let emailValue = email.value.trim();
         let passwordValue = password.value.trim();
-        let hasSpecialChar = false;
+        let hasSpecialChar = /[#\$%]/.test(passwordValue);
 
-        // Check if the password contains #, $, or %
-        if (passwordValue.includes("#") || passwordValue.includes("$") || passwordValue.includes("%")) {
-            hasSpecialChar = true;
-        }
-
-        // Enable submit button only if all conditions are met
-        if (usernameValue !== "" && emailValue.includes("@") && hasSpecialChar) {
+        if (
+            usernameValue !== "" &&
+            emailValue.includes("@") &&
+            hasSpecialChar &&
+            passwordValue.length >= 5
+        ) {
             btnsubmit.disabled = false;
         } else {
             btnsubmit.disabled = true;
         }
     }
 
-    // Add input event listeners to validate fields in real-time
     username.addEventListener("input", checkFormValidity);
     email.addEventListener("input", checkFormValidity);
     password.addEventListener("input", checkFormValidity);
 
-    // Handle form submission
     myform.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault();
 
         let usernameValue = username.value.trim();
         let emailValue = email.value.trim();
         let passwordValue = password.value.trim();
-        let hasSpecialChar = false;
+        let hasSpecialChar = /[#\$%]/.test(passwordValue);
 
-        // Check password for required characters
-        if (passwordValue.includes("#") || passwordValue.includes("$") || passwordValue.includes("%")) {
-            hasSpecialChar = true;
-        }
-
-        // Final validation before submission
         if (usernameValue === "") {
             alert("Please enter a username");
             return;
@@ -181,17 +127,15 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Email must contain '@'.");
             return;
         }
-        if (!hasSpecialChar) {
-            alert("Password must contain at least one of these: #, $, %.");
+        if (!hasSpecialChar || passwordValue.length < 5) {
+            alert("Password must be at least 5 characters and contain one of these: #, $, %.");
             return;
         }
 
-        // Show success message
         greetuser.innerHTML = usernameValue;
-        greeting.style.display = "block";  // Ensure the success message container is visible
+        greeting.style.display = "block";
 
-        // Clear form
         myform.reset();
-        btnsubmit.disabled = true; // Disable submit button after form is cleared
+        btnsubmit.disabled = true;
     });
 });
