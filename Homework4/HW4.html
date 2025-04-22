@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="HW4.css">
 </head>
 <body>
-    <!-- Lab Excercise Part 1/2-->
-    <form id="myform">
+       <!-- Lab Exercise Part 1/2-->
+       <form id="myform">
         <section class="formcontrol">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter username...">
             <p class="error-msg" id="username-error"></p>
         </section>
-
+        
         <section class="formcontrol">
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" placeholder="Enter email...">
             <p class="error-msg" id="email-error"></p>
         </section>
-
+        
         <section class="formcontrol">
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter password...">
             <p>The password must be at least 5 characters and include #, $, or %</p>
             <p class="error-msg" id="password-error"></p>
         </section>
-
+        
         <button type="submit" class="btnsubmit" disabled>Submit Form</button>
     </form>
-
+    
     <div class="gretting" style="display: none;">
         <p>Success! Welcome, <span class="greetuser"></span>.</p>
     </div>
