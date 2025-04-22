@@ -490,15 +490,15 @@ button:hover {
     border: 5px solid darkblue;
 }
 
-.greeting {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translateX(-50%);
+.gretting {
+    width: 400px;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
     text-align: center;
-    font-size: xx-large;
-    font-weight: bolder;
-    z-index: 2;
+    display: none;
 }
 
 .greetuser {
