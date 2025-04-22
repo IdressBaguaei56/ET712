@@ -4,7 +4,7 @@
 
 #myform {
     width: 600px;
-    margin: 4em auto;
+    margin: 4em auto 0 auto; /* Removed bottom margin */
     background-color: blueviolet;
     padding: 2em;
     text-align: center;
@@ -37,13 +37,14 @@
 
 .gretting {
     width: 400px;
-    margin: 15px auto;
+    margin: 0 auto; /* Removed top margin */
     padding: 10px;
     background-color: #d4edda;
     border: 1px solid #c3e6cb;
     border-radius: 4px;
     text-align: center;
     display: none;
+    clear: both;
 }
 
 .greetuser {
@@ -73,10 +74,10 @@ input {
     margin-top: 5px;
 }
 
-
-form {
-    margin-bottom: 30px; 
-}
+/* Remove this as we're handling spacing differently */
+/* form {
+    margin-bottom: 30px;
+} */
 
 /* Lab Exercise 2 */
 /* CSS for Card Gallery */
