@@ -1,0 +1,208 @@
+/* App.css - Batman Theme */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham', 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar - Bat-style */
+.navbar {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 15px rgba(255, 216, 0, 0.2);
+  border-bottom: 3px solid #ffd800;
+}
+
+.nav-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffd800;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 216, 0, 0.2);
+  color: #ffd800;
+}
+
+/* Main Content Area */
+.content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Page Styling */
+.page {
+  background-color: #222222;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 216, 0, 0.1);
+  padding: 2rem;
+  border: 1px solid #333;
+}
+
+.page h1 {
+  color: #ffd800;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.page-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid #444;
+}
+
+.text-content h2 {
+  color: #ffd800;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+.text-content p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #d0d0d0;
+}
+
+/* 404 Page */
+.not-found {
+  text-align: center;
+  padding: 3rem;
+}
+
+.not-found h1 {
+  color: #ff3d3d;
+}
+
+.not-found-image {
+  margin: 2rem auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffd800;
+  color: #0f0f0f;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.home-button:hover {
+  background-color: #e6c200;
+  box-shadow: 0 0 15px rgba(255, 216, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  border-top: 3px solid #ffd800;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .page-content {
+    flex-direction: row;
+  }
+  
+  .page-image {
+    width: 50%;
+    object-fit: cover;
+  }
+  
+  .text-content {
+    width: 50%;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .nav-brand {
+    margin-bottom: 1rem;
+  }
+  
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .page {
+    padding: 1.5rem;
+  }
+}
