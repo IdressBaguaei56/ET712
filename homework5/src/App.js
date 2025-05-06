@@ -18,9 +18,10 @@ function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/origins">Origins</Link></li>
             <li><Link to="/villains">Villains</Link></li>
+            <li><Link to="/test-404">404 Page</Link></li>
           </ul>
         </nav>
-
+        
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -29,7 +30,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-
+        
         <footer className="footer">
           <p>© 2025 Batman Chronicles | Homework 5: React Router Application</p>
         </footer>
