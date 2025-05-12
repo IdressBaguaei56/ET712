@@ -1,0 +1,18 @@
+{
+    "name": "node-modules-server-example",
+    "version": "1.0.0",
+    "description": "Example Node.js application demonstrating custom modules and HTTP server",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "node.js",
+      "modules",
+      "http",
+      "server"
+    ],
+    "author": "",
+    "license": "ISC"
+  }

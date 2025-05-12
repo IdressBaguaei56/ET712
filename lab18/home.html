@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Server Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Node.js Server Example</h1>
+        <p>This page is being served by a Node.js HTTP server using the <code>fs.createReadStream</code> and <code>pipe()</code> methods.</p>
+        
+        <h2>Features Demonstrated:</h2>
+        <ul>
+            <li>Custom module usage with <code>require()</code></li>
+            <li>HTTP server creation with the built-in <code>http</code> module</li>
+            <li>File streaming with <code>fs.createReadStream</code></li>
+            <li>Stream piping with <code>pipe()</code></li>
+        </ul>
+        
+        <p>The server is running on port 4000. You're seeing this page because you've successfully connected to the server!</p>
+    </div>
+</body>
+</html>
