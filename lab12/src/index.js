@@ -5,7 +5,7 @@ import cactusicon from "./images/batman_icon.png"
 import facemanicon from "./images/user_icon.png"
 import headsecticon from "./images/woman_icon.png"
 // import files
-import User_feedback from './user_feedback';
+import User_feedback from './feedback'; // Changed from './user_feedback' to './feedback'
 import './index.css';
 import User from './comments'
 const App = function(){
@@ -37,4 +37,3 @@ root.render(
 <App />
 </React.StrictMode>
 );
-
